@@ -1,6 +1,6 @@
 # Assembly Endgame
 
-A modern, responsive, and feature-rich booking project built with React. This project is meant to showcase the popular React Router library and all of it's most popular use cases to provide an efficient and latest user experience.
+An advanced, dynamic, and full-featured game crafted with React. The idea behind this capstone project is to showcase all of the basic React features and it's capabilities. The game is a rebranded version of the popular Hangman game, known through out the world.
 
 ## Table of Contents
 
@@ -13,13 +13,11 @@ A modern, responsive, and feature-rich booking project built with React. This pr
 
 ## Features
 
-- Responsive design, compatible with tablet and mobile devices
-- Use of nested and deeply nested routes for multipage layering design
-- Mock user login with provided User email and password
-- Showcase of filtering with different filter types
-- Firebase database integration for data fetching
-- Mirage JS integration for setting up a server and user for login validation
-- Clear and modular code structure
+- Conditional Rendering: UI updates dynamically to show correct/incorrect guesses as well as the game lose/win state.
+- Dynamic Word Selection: the game starts with a randomly selected word with each new game
+- State Management with useState: different variables are being tracked using React's useState hook
+- Basic Game Logic Implementation: incorrect guesses tracking, letter validation and more
+- Event handling for user input: onClick events allow users to guess letters
 
 ## Getting Started
 
@@ -38,15 +36,9 @@ To start the development server, run:
 **npm run dev**
 The application will be accessible at **http://localhost:5173.**
 
-### Mock login credentials
-
-- username: b@b.com
-- password: p123
-
 ## Available Scripts
 
-Available Scripts
-In the project directory, you can run:
+Available Scripts in the project directory, you can run:
 
 - npm run dev : Starts the development server
 - npm run build : Builds the application for production
@@ -56,37 +48,26 @@ In the project directory, you can run:
 ## Dependencies
 
 - "clsx": "^2.1.1",
-- "firebase": "^11.3.1",
-- "miragejs": "^0.1.48",
-- "react": "18.2.0",
-- "react-dom": "18.2.0",
-- "react-icons": "^5.5.0",
-- "react-router-dom": "6.4.3",
+- "react": "18.3.1",
+- "react-confetti": "^6.1.0",
+- "react-dom": "18.3.1",
 - "vite": "latest"
 
 ## Project Structure
 
 This project follows a modular structure for better organization and maintainability. Here's an overview of the folder structure:
 
-- **apis**: Global functions used for any kind of interactions with APIs.
-- **assets**: Contains all images used thrughout the project.
-  - **each view (page name)**: Folder for storing images specific to a view.
-- **components**: Stateless components used in multiple places.
-- **consts**: Fixed variables.
-- **css**: View (page) specific css (style) files all exported into index.html.
-- **localStorage**: handles for adding, accessing and removing localStorage data.
+- **css**: css (style) file exported into index.html.
 - **node_modules**: stores all dependencies and libraries used throughout the project.
-- **pages**: Main folder for all the views (pages) in the application.
-  - **page names**: Individual folders for each view.
-  - **host pages**: Separete folder with all views (pages) relating to the user (host)
-- **public**: Stores all static assets that are not processed by the build system
+- **pages**: Main folder for the view (page) of the application.
+- **public**: Stores all static assets that are not processed by the build system.
+- **utils**: Stores different .js files used throught out the project.
 
 Below is an example folder structure for the "pages" view:
 
 ```
 pages/
-└─ Host/
-└─ HostDashboard/
-├── components/
+└─ pages/
+├── App.jsx/
 
 ```
