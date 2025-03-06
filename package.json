@@ -1,6 +1,6 @@
 {
   "name": "assembly-endgame",
-  "description": "https://scrimba.com/frontend-path-c0j/~06jd/s0lsas818o/head",
+  "description": "A reimagined version of the classic Hangman game, built with React as a capstone project, where players guess the hidden word before running out of attempts.",
   "scripts": {
     "start": "vite",
     "dev": "vite",
